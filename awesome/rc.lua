@@ -52,6 +52,8 @@ awful.util.spawn_with_shell("gnome-power-manager")
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("~/.config/awesome/themes/default/theme.lua")
 
+-- gears.wallpaper.fit("/home/xinyao1/.config/awesome/themes/default/background_white.png")
+
 -- This is used later as the default terminal and editor to run.
 -- terminal = "x-terminal-emulator"
 terminal = "gnome-terminal"
@@ -86,7 +88,8 @@ local layouts =
 -- {{{ Wallpaper
 if beautiful.wallpaper then
     for s = 1, screen.count() do
-        gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+       --  gears.wallpaper.fit(beautiful.wallpaper, s, true)
+        gears.wallpaper.centered(beautiful.wallpaper, s)
     end
 end
 -- }}}
