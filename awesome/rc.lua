@@ -114,7 +114,9 @@ myawesomemenu = {
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
                                     { "Debian", debian.menu.Debian_menu.Debian },
-                                    { "open terminal", terminal }
+                                    { "open terminal", terminal },
+                                    { "GoogleChrome", "google-chrome %u"},
+                                    { "Slack", "slack %u"},
                                   }
                         })
 
@@ -377,6 +379,10 @@ awful.rules.rules = {
                      keys = clientkeys,
                      buttons = clientbuttons } },
     { rule = { class = "MPlayer" },
+      properties = { floating = true } },
+    { rule = { class = "slack" },
+      properties = { floating = true } },
+    { rule = { class = "teamviewer" },
       properties = { floating = true } },
     { rule = { class = "pinentry" },
       properties = { floating = true } },
