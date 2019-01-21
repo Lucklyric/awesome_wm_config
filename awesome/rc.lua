@@ -380,6 +380,8 @@ awful.rules.rules = {
                      buttons = clientbuttons } },
     { rule = { class = "MPlayer" },
       properties = { floating = true } },
+    { rule = { class = "google-chrome" },
+      properties = { floating = true } },
     { rule = { class = "slack" },
       properties = { floating = true } },
     { rule = { class = "teamviewer" },
