@@ -46,6 +46,7 @@ os.execute("xcompmgr -c &")
 awful.util.spawn_with_shell("ibus-daemon --xim")
 awful.util.spawn_with_shell("nm-applet")
 awful.util.spawn_with_shell("gnome-power-manager")
+awful.util.spawn_with_shell("gnome-settings-daemon")
 
 
 -- {{{ Variable definitions
@@ -380,7 +381,7 @@ awful.rules.rules = {
                      buttons = clientbuttons } },
     { rule = { class = "MPlayer" },
       properties = { floating = true } },
-    { rule = { class = "google-chrome" },
+    { rule = { class = "Google-chrome" },
       properties = { floating = true } },
     { rule = { class = "slack" },
       properties = { floating = true } },
