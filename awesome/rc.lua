@@ -119,7 +119,7 @@ if has_fdo then
 else
     mymainmenu = awful.menu({
         items = {
-                  menu_awesome,meanu_myquick,
+                  menu_awesome,menu_myquick,
                   { "Debian", debian.menu.Debian_menu.Debian },
                   menu_terminal,
                 }
