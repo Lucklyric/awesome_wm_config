@@ -53,21 +53,41 @@ theme.calendar                                  = theme.icon_dir .. "/cal.png"
 theme.cpu                                       = theme.icon_dir .. "/cpu.png"
 theme.net_up                                    = theme.icon_dir .. "/net_up.png"
 theme.net_down                                  = theme.icon_dir .. "/net_down.png"
-theme.layout_tile                               = theme.icon_dir .. "/tile.png"
-theme.layout_tileleft                           = theme.icon_dir .. "/tileleft.png"
-theme.layout_tilebottom                         = theme.icon_dir .. "/tilebottom.png"
-theme.layout_tiletop                            = theme.icon_dir .. "/tiletop.png"
-theme.layout_fairv                              = theme.icon_dir .. "/fairv.png"
-theme.layout_fairh                              = theme.icon_dir .. "/fairh.png"
-theme.layout_spiral                             = theme.icon_dir .. "/spiral.png"
-theme.layout_dwindle                            = theme.icon_dir .. "/dwindle.png"
-theme.layout_max                                = theme.icon_dir .. "/max.png"
-theme.layout_fullscreen                         = theme.icon_dir .. "/fullscreen.png"
-theme.layout_magnifier                          = theme.icon_dir .. "/magnifier.png"
-theme.layout_floating                           = theme.icon_dir .. "/floating.png"
+
+theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
+theme.layout_fairv = themes_path.."default/layouts/fairvw.png"
+theme.layout_floating  = themes_path.."default/layouts/floatingw.png"
+theme.layout_magnifier = themes_path.."default/layouts/magnifierw.png"
+theme.layout_max = themes_path.."default/layouts/maxw.png"
+theme.layout_fullscreen = themes_path.."default/layouts/fullscreenw.png"
+theme.layout_tilebottom = themes_path.."default/layouts/tilebottomw.png"
+theme.layout_tileleft   = themes_path.."default/layouts/tileleftw.png"
+theme.layout_tile = themes_path.."default/layouts/tilew.png"
+theme.layout_tiletop = themes_path.."default/layouts/tiletopw.png"
+theme.layout_spiral  = themes_path.."default/layouts/spiralw.png"
+theme.layout_dwindle = themes_path.."default/layouts/dwindlew.png"
+theme.layout_cornernw = themes_path.."default/layouts/cornernww.png"
+theme.layout_cornerne = themes_path.."default/layouts/cornernew.png"
+theme.layout_cornersw = themes_path.."default/layouts/cornersww.png"
+theme.layout_cornerse = themes_path.."default/layouts/cornersew.png"
+-- theme.layout_tile                               = theme.icon_dir .. "/tile.png"
+-- theme.layout_tileleft                           = theme.icon_dir .. "/tileleft.png"
+-- theme.layout_tilebottom                         = theme.icon_dir .. "/tilebottom.png"
+-- theme.layout_tiletop                            = theme.icon_dir .. "/tiletop.png"
+-- theme.layout_fairv                              = theme.icon_dir .. "/fairv.png"
+-- theme.layout_fairh                              = theme.icon_dir .. "/fairh.png"
+-- theme.layout_spiral                             = theme.icon_dir .. "/spiral.png"
+-- theme.layout_dwindle                            = theme.icon_dir .. "/dwindle.png"
+-- theme.layout_max                                = theme.icon_dir .. "/max.png"
+-- theme.layout_fullscreen                         = theme.icon_dir .. "/fullscreen.png"
+-- theme.layout_magnifier                          = theme.icon_dir .. "/magnifier.png"
+-- theme.layout_floating                           = theme.icon_dir .. "/floating.png"
+
 theme.tasklist_plain_task_name                  = true
-theme.tasklist_disable_icon                     = true 
+theme.tasklist_disable_icon                     = true
 theme.useless_gap                               = 0
+theme.titlebar_size                             = 16
+
 theme.titlebar_close_button_normal              = theme.default_dir.."/titlebar/close_normal.png"
 theme.titlebar_close_button_focus               = theme.default_dir.."/titlebar/close_focus.png"
 theme.titlebar_minimize_button_normal           = theme.default_dir.."/titlebar/minimize_normal.png"
@@ -94,10 +114,10 @@ theme.titlebar_maximized_button_focus_active    = theme.default_dir.."/titlebar/
 -- Generate taglist squares:
 local taglist_square_size = dpi(4)
 theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
-    taglist_square_size, theme.fg_normal
+taglist_square_size, theme.fg_normal
 )
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
-    taglist_square_size, theme.fg_normal
+taglist_square_size, theme.fg_normal
 )
 
 -- Variables set for theming notifications:
@@ -167,7 +187,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 --
 -- Generate Awesome icon:
 theme.awesome_icon = theme_assets.awesome_icon(
-    theme.menu_height, theme.bg_focus, theme.fg_focus
+theme.menu_height, theme.bg_focus, theme.fg_focus
 )
 --
 -- -- Define the icon theme for application icons. If not set then the icons
