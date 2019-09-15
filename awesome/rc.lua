@@ -19,6 +19,9 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
 
 -- auto run app
+awful.util.spawn_with_shell("vmware-hgfsclient")
+awful.util.spawn_with_shell("vmwarectrl")
+awful.util.spawn_with_shell("vmware-user")
 awful.util.spawn_with_shell("xcompmgr -c")
 awful.util.spawn_with_shell("ibus-daemon --xim")
 awful.util.spawn_with_shell("nm-applet")
